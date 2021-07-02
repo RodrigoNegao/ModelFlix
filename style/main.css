@@ -12,7 +12,8 @@
 
 body {
   background-color: var(--preta);
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: "Times New Roman", Times, serif; */
   color: white;
 }
 
@@ -51,19 +52,22 @@ header nav a:hover {
   align-items: flex-start;
 }
 
+.cartaz button{
+  margin-left: 5%;
+}
+
 .cartaz .description {
   margin-bottom: 40px;
 }
 
 .cartaz p{
+  margin-top: 15px;
   margin-left: 5%;
   text-align: justify;
   text-justify: inter-word;
 }
 
-.cartaz button{
-  margin-left: 5%;
-}
+
 
 .title {
   margin-left: 5%;
@@ -107,6 +111,7 @@ header nav a:hover {
 }
 
 h3 {
+  font-size: 1.9em;
   margin: 15px 17px 10px 30px ;
 }
 
@@ -121,20 +126,12 @@ h3 {
   margin-top:5px;
 } */
 
-/* .item{
-  overflow: hidden;
-} */
-
 /* .item:hover, img:hover{
   transition: 1s;
   transform: scale(1.1);
 
 } */
 
-/* .owl-item.active.center:hover {
-  transition: 1s;
-  transform: scale(1.1);
-} */
 
 .item {
   position: relative;
@@ -148,14 +145,36 @@ h3 {
   display: none;
 }
 
+.item .namesmovies {
+  position: absolute;
+  top: 65%;  
+  left: 45%;
+  transform: translate(-45%, -45%);
+  display: none;
+}
+
 .item:hover img {
-  opacity: 0.3;
-  transition: 1s ease;
+  opacity: 0.6;
+  transition: 1s;
+  /* transform: scale(1.1); */
+}
+
+/* .item:hover i {
+  display: block;
+  z-index: 500;
+  transition: .5s ease;
+  transform: scale(5);
+} */
+
+.item:hover .namesmovies {
+  display: block;
+  z-index: 500;
+  transition: .5s ease;
 }
 
 .item:hover i {
   display: block;
   z-index: 500;
-  transition: 2s ease;
   transform: scale(5);
+  transition: .5s ease;  
 }
