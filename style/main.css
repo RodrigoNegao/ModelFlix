@@ -40,8 +40,8 @@ header nav a:hover {
 }
 
 .cartaz {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("../img/lokiinfo.jpg");
+  /* background: linear-gradient(90deg, rgba(2,0,36,0.8575805322128851) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.43461134453781514) 100%, rgba(9,9,121,0.40940126050420167) 100%, rgba(0,212,255,1) 100%),url("../img/lokiinfo.jpg"); */
+  background: linear-gradient(90deg, rgba(229,9,20,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5270483193277311) 100%),url("../img/lokiinfo.jpg");/* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), */
   font-size: 16px;
   height: 400px;
   background-size: cover;
@@ -55,7 +55,18 @@ header nav a:hover {
   margin-bottom: 40px;
 }
 
+.cartaz p{
+  margin-left: 5%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.cartaz button{
+  margin-left: 5%;
+}
+
 .title {
+  margin-left: 5%;
   margin-top: 5%;
   font-size: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -95,6 +106,10 @@ header nav a:hover {
   width: 70%;
 }
 
+h3 {
+  margin: 15px 17px 10px 30px ;
+}
+
 .box{
   height: 100%;
   width: 100%;
@@ -102,6 +117,45 @@ header nav a:hover {
   cursor: pointer;
 }
 
-.carrosel{
+/* .carousel{
   margin-top:5px;
+} */
+
+/* .item{
+  overflow: hidden;
+} */
+
+/* .item:hover, img:hover{
+  transition: 1s;
+  transform: scale(1.1);
+
+} */
+
+/* .owl-item.active.center:hover {
+  transition: 1s;
+  transform: scale(1.1);
+} */
+
+.item {
+  position: relative;
+}
+
+.item i {
+  position: absolute;
+  top: 45%;  
+  left: 45%;
+  transform: translate(-45%, -45%);
+  display: none;
+}
+
+.item:hover img {
+  opacity: 0.3;
+  transition: 1s ease;
+}
+
+.item:hover i {
+  display: block;
+  z-index: 500;
+  transition: 2s ease;
+  transform: scale(5);
 }
