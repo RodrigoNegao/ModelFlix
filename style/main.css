@@ -169,12 +169,12 @@ h3 {
 .item:hover .namesmovies {
   display: block;
   z-index: 500;
-  transition: .5s ease;
+  /* transition: .5s ease; */
 }
 
 .item:hover i {
   display: block;
   z-index: 500;
   transform: scale(5);
-  transition: .5s ease;  
+  /* transition: .5s ease;   */
 }
