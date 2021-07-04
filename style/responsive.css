@@ -20,7 +20,11 @@
   }
 
   .item .namesmovies {
-    top: 55%;
+    top: 65%;
+  }
+
+  .cartaz .description {
+    margin-bottom: 60px;
   }
 }
 
